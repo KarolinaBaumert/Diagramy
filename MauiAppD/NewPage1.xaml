@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppD.NewPage1"
+             BackgroundColor="White">
+    <Grid>
+        
+        <ScrollView Grid.Row="0">
+            <Grid Padding="30" ColumnSpacing="20">
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+              
+                <VerticalStackLayout Grid.Column="0" BackgroundColor="#f2f2f2" Padding="10" WidthRequest="250" VerticalOptions="Start">
+                    <Grid>
+                        <Image Source="person1.jpg" HeightRequest="250" WidthRequest="150" HorizontalOptions="Center" />
+                        <Button BackgroundColor="Transparent"
+                                BorderColor="Transparent"
+                                Clicked="Button_Clicked"
+                                VerticalOptions="Fill"
+                                HorizontalOptions="Fill" />
+                    </Grid>
+                    <Label Text="Jan Kowalski" FontSize="25" TextColor="Black" HorizontalOptions="Center" VerticalOptions="End" Padding="20"/>
+                </VerticalStackLayout>
+
+                
+                <VerticalStackLayout Grid.Column="1" BackgroundColor="#f2f2f2" Padding="10" WidthRequest="250" VerticalOptions="Start">
+                    <Image Source="person1.jpg" HeightRequest="250" WidthRequest="150" HorizontalOptions="Center" />
+                    <Label Text="Anna Nowak" FontSize="25" TextColor="Black" HorizontalOptions="Center" VerticalOptions="End" Padding="20"/>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Grid.Column="2" BackgroundColor="#f2f2f2" Padding="10" WidthRequest="250" VerticalOptions="Start">
+                    <Image Source="person1.jpg" HeightRequest="250" WidthRequest="150" HorizontalOptions="Center" />
+                    <Label Text="Piotr Wiśniewski" FontSize="25" TextColor="Black" HorizontalOptions="Center" VerticalOptions="End" Padding="20"/>
+                </VerticalStackLayout>
+
+                
+                <VerticalStackLayout Grid.Column="3" BackgroundColor="#f2f2f2" Padding="10" WidthRequest="250" VerticalOptions="Start">
+                    <Image Source="person1.jpg" HeightRequest="250" WidthRequest="150" HorizontalOptions="Center" />
+                    <Label Text="Katarzyna Zając" FontSize="25" TextColor="Black" HorizontalOptions="Center" VerticalOptions="End" Padding="20"/>
+                </VerticalStackLayout>
+
+                
+                <VerticalStackLayout Grid.Column="4" BackgroundColor="#f2f2f2" Padding="10" WidthRequest="250" VerticalOptions="Start">
+                    <Image Source="person1.jpg" HeightRequest="250" WidthRequest="150" HorizontalOptions="Center" />
+                    <Label Text="Michał Lewy" FontSize="25" TextColor="Black" HorizontalOptions="Center" VerticalOptions="End" Padding="20"/>
+                </VerticalStackLayout>
+            </Grid>
+        </ScrollView>
+
+
+        <Grid Grid.Row="1" HeightRequest="80" BackgroundColor="#f2f2f2" VerticalOptions="End">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Image Source="plus.jpg" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="40" WidthRequest="40" />
+            <Image Source="edit.jpg" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="40" WidthRequest="40" />
+            <Image Source="delete.png" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="40" WidthRequest="40" />
+        </Grid>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppD.NewPage2"
+             BackgroundColor="White">
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Label Text="Jan Kowalski" FontSize="Large" HorizontalOptions="Center" Margin="0,20,0,20" TextColor="Black"/>
+
+            <Label Text="Id" TextColor="Black"/>
+            <Label Text="  1" Margin="0,0,0,10" TextColor="Black"/>
+
+            <Label Text="Imię" TextColor="Black"/>
+            <Label Text="  Jan" Margin="0,0,0,10" TextColor="Black"/>
+
+            <Label Text="Nazwisko" TextColor="Black"/>
+            <Label Text="  Kowalski" Margin="0,0,0,10" TextColor="Black"/>
+
+            <Label Text="Adres" TextColor="Black"/>
+            <Label Text="  Warszawa, ul. Nowa 1" Margin="0,0,0,10" TextColor="Black"/>
+
+            <Label Text="Telefon" TextColor="Black"/>
+            <Label Text="  +48 123 456 789" Margin="0,0,0,10" TextColor="Black"/>
+
+            <Label Text="E-mail" TextColor="Black"/>
+            <Label Text="  jan.kowalski@example.com" Margin="0,0,0,10" TextColor="Black"/>
+
+            <Label Text="Data urodzenia" TextColor="Black"/>
+            <Label Text="  01.01.1980" Margin="0,0,0,10" TextColor="Black"/>
+
+            <Label Text="Saldo konta" TextColor="Black"/>
+            <Label Text="  10000.00" Margin="0,0,0,10" TextColor="Black"/>
+
+            <Label Text="Kredyty" TextColor="Black"/>
+            <Label Text="  Id: 1&#10;  Kwota: 5000.00&#10;  Data początkowa: 2022-01-01&#10;  Data końcowa: 2027-01-01" 
+                   LineBreakMode="WordWrap" Margin="0,0,0,10" TextColor="Black"/>
+
+            <Label Text="Historia transakcji" TextColor="Black"/>
+            <Label Text="  Id: 1&#10;  Kwota: 200.00&#10;  Data transakcji: 2023-11-20&#10;  Typ: Wpłata" 
+                   LineBreakMode="WordWrap" Margin="0,0,0,10" TextColor="Black"/>
+
+            <Label Text="Limit kredytowy" TextColor="Black"/>
+            <Label Text="  5000.00" Margin="0,0,0,10" TextColor="Black"/>
+
+            <Label Text="Numer identyfikacji podatkowej" TextColor="Black"/>
+            <Label Text="  PL1234567890" Margin="0,0,0,10" TextColor="Black"/>
+
+            <Label Text="Przychody roczne" TextColor="Black"/>
+            <Label Text="  50000.00" Margin="0,0,0,10" TextColor="Black"/>
+
+            <Label Text="Wydatki roczne" TextColor="Black"/>
+            <Label Text="  30000.00" Margin="0,0,0,10" TextColor="Black"/>
+
+            <Label Text="Zobowiązania podatkowe" TextColor="Black"/>
+            <Label Text="  5000.00" Margin="0,0,0,10" TextColor="Black"/>
+
+            <Label Text="Ulgi podatkowe" TextColor="Black"/>
+            <Label Text="  Id: 1&#10;  Kwota: 1000.00&#10;  Opis: Ulga na dziecko" 
+                   LineBreakMode="WordWrap" Margin="0,0,0,10" TextColor="Black"/>
+
+            <Label Text="Typ opodatkowania" TextColor="Black"/>
+            <Label Text="  Podatek liniowy" Margin="0,0,0,10" TextColor="Black"/>
+
+            <Label Text="Opiekun" TextColor="Black"/>
+            <Label Text="  Pracownik1" Margin="0,0,0,10" TextColor="Black"/>
+
+            <StackLayout x:Name="ReportStackLayout">
+               
+            </StackLayout>
+
+            <Grid HeightRequest="80" BackgroundColor="#f2f2f2" VerticalOptions="End">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="70" WidthRequest="70" BackgroundColor="Transparent" Clicked="Button_Clicked">
+                    <Button.ImageSource>
+                        <FileImageSource File="generate.png" />
+                    </Button.ImageSource>
+                </Button>
+                <Image Source="plus.jpg" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="40" WidthRequest="40" />
+                <Image Source="edit.jpg" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="40" WidthRequest="40" />
+                <Image Source="delete.png" Grid.Column="3" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="40" WidthRequest="40" />
+            </Grid>
+        </StackLayout>
+        
+    </ScrollView>
+</ContentPage>

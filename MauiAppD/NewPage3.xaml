@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppD.NewPage3"
+             BackgroundColor="White">
+    <ScrollView>
+        <StackLayout Padding="30">
+ 
+            <Label Text="Raport Finansowy" FontSize="24" HorizontalOptions="Center" Margin="0,20,0,20" TextColor="Black"/>
+            <Label Text="Jan Kowalski" FontSize="18" HorizontalOptions="Center" TextColor="Black"/>
+            <Label Text="Numer Identyfikacji Podatkowej: PL1234567890" FontSize="14" HorizontalOptions="Center" TextColor="Black"/>
+            <Label Text="Data raportu: 12 stycznia 2025" FontSize="14" HorizontalOptions="Center" TextColor="Black" Margin="0,0,0,30"/>
+
+            <Label Text="Dane Osobowe" FontSize="18" FontAttributes="Bold" TextColor="Black" Margin="0,10,0,10"/>
+            <StackLayout Padding="10" BackgroundColor="#f2f2f2" Spacing="5">
+                <Label Text="Id: 1" TextColor="Black"/>
+                <Label Text="Imię: Jan" TextColor="Black"/>
+                <Label Text="Nazwisko: Kowalski" TextColor="Black"/>
+                <Label Text="Adres: Warszawa, ul. Nowa 1" TextColor="Black"/>
+                <Label Text="Telefon: +48 123 456 789" TextColor="Black"/>
+                <Label Text="E-mail: jan.kowalski@example.com" TextColor="Black"/>
+                <Label Text="Data urodzenia: 01.01.1980" TextColor="Black"/>
+            </StackLayout>
+
+            <Label Text="Saldo Konta" FontSize="18" FontAttributes="Bold" TextColor="Black" Margin="0,20,0,10"/>
+            <StackLayout Padding="10" BackgroundColor="#f2f2f2" Spacing="5">
+                <Label Text="Saldo konta: 10000.00 PLN" TextColor="Black"/>
+                <Label Text="Limit kredytowy: 5000.00 PLN" TextColor="Black"/>
+            </StackLayout>
+
+          
+            <Label Text="Kredyty" FontSize="18" FontAttributes="Bold" TextColor="Black" Margin="0,20,0,10"/>
+            <StackLayout Padding="10" BackgroundColor="#f2f2f2" Spacing="5">
+                <Label Text="Id: 1" TextColor="Black"/>
+                <Label Text="Kwota: 5000.00 PLN" TextColor="Black"/>
+                <Label Text="Data początkowa: 2022-01-01" TextColor="Black"/>
+                <Label Text="Data końcowa: 2027-01-01" TextColor="Black"/>
+            </StackLayout>
+
+            <Label Text="Historia Transakcji" FontSize="18" FontAttributes="Bold" TextColor="Black" Margin="0,20,0,10"/>
+            <StackLayout Padding="10" BackgroundColor="#f2f2f2" Spacing="5">
+                <Label Text="Id: 1" TextColor="Black"/>
+                <Label Text="Kwota: 200.00 PLN" TextColor="Black"/>
+                <Label Text="Data transakcji: 2023-11-20" TextColor="Black"/>
+                <Label Text="Typ: Wpłata" TextColor="Black"/>
+            </StackLayout>
+
+            <Label Text="Przychody i Wydatki" FontSize="18" FontAttributes="Bold" TextColor="Black" Margin="0,20,0,10"/>
+            <StackLayout Padding="10" BackgroundColor="#f2f2f2" Spacing="5">
+                <Label Text="Przychody roczne: 50000.00 PLN" TextColor="Black"/>
+                <Label Text="Wydatki roczne: 30000.00 PLN" TextColor="Black"/>
+                <Label Text="Zobowiązania podatkowe: 5000.00 PLN" TextColor="Black"/>
+                <Label Text="Ulgi podatkowe: 1000.00 PLN (Ulga na dziecko)" TextColor="Black"/>
+            </StackLayout>
+
+            <Label Text="Podsumowanie" FontSize="18" FontAttributes="Bold" TextColor="Black" Margin="0,30,0,10"/>
+            <StackLayout Padding="10" BackgroundColor="#f2f2f2" Spacing="5">
+                <Label Text="Typ opodatkowania: Podatek liniowy" TextColor="Black"/>
+                <Label Text="Opiekun: Pracownik1" TextColor="Black"/>
+            </StackLayout>
+
+            <Label Text="Podpis osoby odpowiedzialnej:" FontSize="16" FontAttributes="Bold" TextColor="Black" Margin="0,30,0,10"/>
+            <Label Text="......................................................" FontSize="14" TextColor="Black"/>
+            <Label Text="Data: ............................................" FontSize="14" TextColor="Black"/>
+
+            <Grid HeightRequest="80" BackgroundColor="#f2f2f2" VerticalOptions="End">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="70" WidthRequest="70" BackgroundColor="Transparent" Clicked="Save_Clicked">
+                    <Button.ImageSource>
+                        <FileImageSource File="save.png" />
+                    </Button.ImageSource>
+                </Button>
+                <Button Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="70" WidthRequest="70" BackgroundColor="Transparent" Clicked="Download_ClickedAsync">
+                    <Button.ImageSource>
+                        <FileImageSource File="download.png" />
+                    </Button.ImageSource>
+                </Button>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
